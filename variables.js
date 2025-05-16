@@ -7,7 +7,7 @@ console.log(age)
 
 //let can reassign but can't redeclare
 let customerdetails = 123456789
-    customerdetails= 0
+    customerdetails= 100
 //let customerdetails = 999999999
 console.log(customerdetails)
 document.write(customerdetails)
