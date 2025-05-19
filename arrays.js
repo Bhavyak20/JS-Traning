@@ -45,3 +45,15 @@ let seasons = [
 ]
 console.log(seasons)
 console.log(seasons[2])
+
+// defined object in array
+let movies =["Telugu","Hindi","Cannada","Tamil","Malayalam",
+      {
+        teluguhero:"Mahesh",
+        numofmovies:10,
+        
+      }
+]
+console.log(movies)
+console.log( `${movies[5].teluguhero} is a ${movies[0]} hero`)
+

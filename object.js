@@ -25,3 +25,15 @@ console.log(space.sky)
 console.log(space.sky[2])
 console.log(space.planets[3])
 document.write(space.planets[2])
+
+
+//defined array in object
+
+let transportways={
+      roadways:"Car",
+      waterways:"ship",
+      typesoftransport:["road","water","track","air"]
+      
+}
+console.log(transportways)
+console.log(transportways.typesoftransport[1])

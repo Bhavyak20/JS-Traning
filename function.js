@@ -32,3 +32,14 @@ function India(){
     console.log(India)
     }
     India();
+
+    function State(){
+        let name="Andhra Pradesh";
+        let districts=26;
+        let regions=3;
+        console.log(State)
+    }
+    
+    State()
+    India()
+   
