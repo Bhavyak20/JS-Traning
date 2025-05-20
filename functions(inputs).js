@@ -28,3 +28,39 @@ function companydetails( name,branchno,numofbranches){
 
 }
 companydetails("DXC","2","5")
+ //optional parameter
+function movie( moviename,hero,heroine,language,releasedate,collection){
+    console.log("MOVIENAME:" +moviename)
+   console.log("HERONAME: " +hero)
+    console.log("HEROINENAME: " +heroine)
+    console.log("MovieLangiage: "+language)
+     releasedate = releasedate || "May 1st"; 
+    console.log("MovieReleaseDate: " +releasedate)
+   
+    console.log("MOVIECOLLECTION:" +collection)
+}
+movie("HIT3","NANI","SRINIDHI","TELUGU","", "150cr")
+
+//default parameter
+
+function paper(name,owner,language, origin="Andhra Pradesh"){
+    document.write("Papername: " +name)
+    document.write("PaperOwner: " +owner)
+    document.write("PaperLanguage: " +language)
+    document.write("PaperOrigin: " +origin)
+
+}
+paper("ENADU","RamojiNaidu","Telugu")
+console.log(paper)
+
+//rest parameters
+function music(... parameters){
+    console.log(parameters)
+console.log("MUSICRECTOR: " +parameters[0])
+console.log("MOVIENAME: " +parameters[1])
+console.log("MUSICLANGUAGE:" +parameters[2])
+console.log("MOVIEDIRECTOR:" +parameters[3])
+}
+music("A.R.RAHMAN","BOMBAY","MULTIPLE","MANI RTANAM")
+
+
