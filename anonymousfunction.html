@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <script>
+    //ANONYMOUS FUNCTION implemented opetional prameter
+
+    var schooldetails = function () {
+      let school = "NRI";
+      let pincode = 123456;
+      let location;
+      location = location || "Vijaywada"
+      console.log("SCHOOLNAME:" + school, "PINCODE:" + pincode, "LOCATION: " + location)
+    }
+    schooldetails()
+
+    //ANONYMOUS FUNCTION using parameters and arguments and implemented defailt parameter
+
+    let collegedetails = function (collegename, collegelocation, numofbranches = "7") {
+      console.log("NAME:" + collegename)
+      console.log("PLACE: " + collegelocation)
+      console.log("NUM OF Branches: " + numofbranches)
+    }
+    collegedetails("VELTECH", "CHENNAI");
+
+
+    //IIFE-IMEDIATE INVOKED FUNCTION
+
+    (
+      function () {
+        console.log("IT IS IIEFE using with using parameters");
+      }
+    )()
+      //IIFE using parameters
+
+      (
+          function(moviename){
+            console.log("nameof movie:" +moviename);
+        }
+      )("BAHUBALI");
+(function(bookName, authorName){
+    //document.write(bookName);
+    console.log(bookName);
+    console.log(authorName);
+})("Harry Potter series","Rabindranath Tagore");
+
+  </script>
+</body>
+
+</html>
