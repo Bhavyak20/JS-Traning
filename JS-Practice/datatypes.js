@@ -56,10 +56,15 @@ console.log(monthsofyear)
   comapnyname:"TCS",
     branches:5,
     CEO:"RATAN TATA",
-    location:["HYD","CHENNAI","BANGLORE","PUNE","NOIDA"]
+    location:["HYD","CHENNAI","BANGLORE","PUNE","NOIDA"],
+    places: function(){
+        console.log("hello there are 5 places")
+
+    }
 }
 console.log(companydetail.location[4]);
 console.log(companydetail.location[0])
+console.log(companydetail.places)
 
 //function
 
@@ -77,6 +82,12 @@ function science(){
 }
 
 science()
+//second example for nammed function
+
+function grades( grade1,grade2,grade3){
+console.log("First grade:" +grade1)
+}
+grades("first","second","third")
 //arrow function
 const social=()=>{
 console.log("ECONOMICS")
