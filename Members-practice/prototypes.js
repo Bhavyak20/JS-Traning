@@ -9,12 +9,14 @@ function years (){
 years.prototype.months=function(){
          this.oddmonth="february";
          console.log("FIRST MONTH OF YEAR IS ", this.firstday)
+         
          //console.log(this)
 }
 
 {
     years.prototype.leap=function(){
         console.log("we see leap year when we have 29 days in ", this.diferrentmonth)
+        
         //console.log(this)
     }
 }

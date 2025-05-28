@@ -26,32 +26,33 @@
 // ipl.teams("MI","RR","GT")
 
 //constructor function
-// function games ( game1,game2,game3 ){
-//  this.first=game3
-//  console.log(this);
-//  console.log("my fav game is ", this.first);
-
-// }
-// new games("hockey","cricket","chess")
-
-//arrow function
- var hello="world";
-let school={
-    name:"nri",
-    brnaches:3,
-    places:function(){
-        console.log(this.brnaches)
-        console.log(this)
-    },
-    countries:()=>{
-        console.log(this.brnaches)
-        console.log(this.hello)
-        //console.log(this)  in arrow function this is global it will accept value out of function/obj
-    }
+function games ( game1,game2,game3 ){
+ this.first=game3
+ console.log(this);
+ console.log("my fav game is ", this.first);
+ console.log("hello", game1)
 
 }
-school.places()
-school.countries()
+new games("hockey","cricket","chess")
+
+//arrow function
+//  var hello="world";
+// let school={
+//     name:"nri",
+//     brnaches:3,
+//     places:function(){
+//         console.log(this.brnaches)
+//         console.log(this)
+//     },
+//     countries:()=>{
+//         console.log(this.brnaches)
+//         console.log(this.hello)
+//         //console.log(this)  in arrow function this is global it will accept value out of function/obj
+//     }
+
+// }
+// school.places()
+// school.countries()
 
 
 
