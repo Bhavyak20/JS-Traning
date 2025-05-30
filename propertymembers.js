@@ -60,6 +60,7 @@ console.log(`I'm having ${this.Type1} account in ${branch} `)
 
 bankdetails.prototype.accountdetails=function(){
     console.log(age)
+    console.log("I live in :", this.place)
 }
 let more= new bankdetails("salary","savings")
 more.customerdetails()
