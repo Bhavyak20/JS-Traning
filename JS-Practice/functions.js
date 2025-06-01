@@ -59,5 +59,19 @@ console.log(three)
  typesoffunction("named","anonymous","Arrow")
 
  
- 
+ //variable function with non void
+//  let nonvoid=function(name,age,clas){
+//     let obj=(`this is nonvoid return function`)
+// return obj
+
+//  }
+//  let data=nonvoid()
+// console.log(data)
+
+let schooldetails=function(name,location,principal){
+    console.log(`my school name is ${name}`)
+    let school=(`my principal of the scool is ${principal}`)
+    return school
+}
+console.log(schooldetails("NRI","VIJ","RAJU"))
  
