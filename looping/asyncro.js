@@ -20,6 +20,6 @@ function weeks(){
      },2000)
     //console.log("theer are 7 days in a week")
 }
-years()
-months()
-weeks()
+years();
+months();
+weeks();
