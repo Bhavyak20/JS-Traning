@@ -1,5 +1,5 @@
-// //synchornous call has default function to add some timeinterval to print output.
-// //synchr call using callback function and hellcallback .it is complicated.
+// // // //synchornous call has default function to add some timeinterval to print output.
+// // // //synchr call using callback function and hellcallback .it is complicated.
 
 // function sleep(){
 
@@ -10,13 +10,13 @@
 //     //console.log("wait for 5 seconds")
 // }
 // }
-// //test example
-// // // function test(){
-// // //     sleep();
-// // //     console.log("test")
-// // // }
-// // // test()
-// //example-1
+// // // //test example
+// // // // // function test(){
+// // // // //     sleep();
+// // // // //     console.log("test")
+// // // // // }
+// // // // // test()
+// // // //example-1
 // function myname (callback){
 //     sleep();
 //     console.log("bhavya")
@@ -38,42 +38,42 @@
 //     })
 // })
 
-// //example-2
-// function peep(millisecs){
-//     let startTime = new Date().getTime();
-//     let endTime = startTime + millisecs;
-//     while(new Date().getTime() < endTime);{
+// // // //example-2
+// // // function peep(millisecs){
+// // //     let startTime = new Date().getTime();
+// // //     let endTime = startTime + millisecs;
+// // //     while(new Date().getTime() < endTime);{
 
-//     }
-// }
+// // //     }
+// // // }
 
 
-// function trail(callback){
+// // // function trail(callback){
    
-//     console.log("Trail1")
-//      peep(5000)
-//     callback()
-// }
-// function secondtrail(call){
-//     console.log("Trail 2")
-//      peep(10000)
-//     call()
-// }
-// function thirdtrail(){
+// // //     console.log("Trail1")
+// // //      peep(5000)
+// // //     callback()
+// // // }
+// // // function secondtrail(call){
+// // //     console.log("Trail 2")
+// // //      peep(10000)
+// // //     call()
+// // // }
+// // // function thirdtrail(){
     
-//     console.log("Trail 3")
-//     peep(4000)
-// }
+// // //     console.log("Trail 3")
+// // //     peep(4000)
+// // // }
 
-//  console.time("total time")
-// trail(()=>{
-//     secondtrail(()=>{
-//         thirdtrail()
-//     })
-// })
-// console.timeEnd("total time")
+// // //  console.time("total time")
+// // // trail(()=>{
+// // //     secondtrail(()=>{
+// // //         thirdtrail()
+// // //     })
+// // // })
+// // // console.timeEnd("total time")
 
-//sync call in callback hell
+// //sync call in callback hell
 function peep(millisecs){
     let startTime = new Date().getTime();
     let endTime = startTime + millisecs;
@@ -93,7 +93,7 @@ function months(call){
 }
 function weeks(){
       peep(6000);
-    console.log("theer are 7 days in a week")
+    console.log("theer are 7 days in a week");
 }
 
 console.time("time taken")
@@ -103,3 +103,28 @@ years(()=>{
     })
 })
 console.timeEnd("time taken")
+
+//example
+function stepone(callback){
+    setTimeout(()=>{
+     console.log("Printing step 1")
+     callback()
+    },10000)
+}
+function steptwo(call){
+    setTimeout(()=>{
+     console.log("Printing step 2")
+     call()
+    }, 2000)
+}
+function stepthree(){
+    setTimeout(()=>{
+         console.log("Printing step 3")
+    },6000)
+    
+}
+stepone(()=>{
+    steptwo(()=>{
+        stepthree()
+    })
+})

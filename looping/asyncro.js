@@ -20,6 +20,38 @@ function weeks(){
      },2000)
     //console.log("theer are 7 days in a week")
 }
-years()
-months()
-weeks()
+years();
+months();
+weeks();
+
+// //example
+// function StepOne() {
+//     //sleep(5000);
+//         setTimeout(() => {
+//         console.log("Step One");
+//     }, 7000)
+// }
+
+
+// function StepTwo() {
+//     //sleep(10000);
+    
+//     setTimeout(() => {
+//         console.log("Step Two");
+//     }, 2000)
+
+// }
+
+// function StepThree() {
+//     //sleep(7000);
+//     setTimeout(() => {
+//         console.log("Step Three");
+//     }, 1000)
+// }
+
+// console.time("MyTaskTime");
+// StepOne()
+// StepTwo()
+// StepThree()
+// console.timeEnd("MyTaskTime")
+
