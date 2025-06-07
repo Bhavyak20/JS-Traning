@@ -75,3 +75,11 @@ vehicles(1,2,function(person1,person2){
     
 })
 
+//variable function with callback
+let country=function(states,regions,callback){
+console.log(states)
+callback()
+}
+country("29","4",(()=>{
+    console.log("INDIA IS OUR COUNTRY")
+}))
