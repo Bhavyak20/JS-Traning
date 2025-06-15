@@ -47,28 +47,48 @@
 
 //using apply
 
-let zoo={
-    totalzones:2,
-    zone2:function(parameter1,parameter2){
-     console.log(`we have ${parameter1} in zone1`)
-     console.log(this.howmany)
-     console.log(`there are ${this.wateranimals} in the zoo park`)
-     console.log(`there are ${this.flying} in the zoo park`)
-     console.log(this)
-    }
-}
+// let zoo={
+//     totalzones:2,
+//     zone2:function(parameter1,parameter2){
+//      console.log(`we have ${parameter1} in zone1`)
+//      console.log(this.howmany)
+//      console.log(`there are ${this.wateranimals} in the zoo park`)
+//      console.log(`there are ${this.flying} in the zoo park`)
+//      console.log(this)
+//     }
+// }
 
-let water={
-    wateranimals:"fishes",
-    howmany:"infinity",
+// let water={
+//     wateranimals:"fishes",
+//     howmany:"infinity",
     
-}
+// }
 
-let birds={
-    flying:"peacock",
-    count:"somany"
+// let birds={
+//     flying:"peacock",
+//     count:"somany"
+// }
+// //zoo.zone2("wild animals","domestic animals")
+// //zoo.zone2.call(water,"wild animals","domestic animals")
+// //zoo.zone2.apply(birds,["wild animals","domestic animals"])
+// console.log(zoo.zone2.bind(water, "wild animals","domestic animals"))
+
+let obj={
+   totalcompanies:3,
+   firstcompanay:function(name,location,numofbranches){
+    this.employeeID=12345;
+    this.project="Prod"
+    console.log(`I'm currently working in ${name} and location is ${location}.There are total ${numofbranches} branches`)
+    console.log(`My project is ${this.project}`)
+    console.log(`My second otion is ${this.companyname}`)
+   }
 }
-//zoo.zone2("wild animals","domestic animals")
-//zoo.zone2.call(water,"wild animals","domestic animals")
-//zoo.zone2.apply(birds,["wild animals","domestic animals"])
-console.log(zoo.zone2.bind(water, "wild animals","domestic animals"))
+let secondacompaany={
+    companyname:"TCS",
+    locationofsecondcompany:"Banglore"
+}
+//obj.firstcompanay("DXC","HYD","3")
+
+//obj.firstcompanay.call(secondacompaany,"DXC","HYD","3")
+//obj.firstcompanay.apply(secondacompaany,["DXC","HYD","3"])
+console.log(obj.firstcompanay.bind(secondacompaany,"DXC","HYD","3"))

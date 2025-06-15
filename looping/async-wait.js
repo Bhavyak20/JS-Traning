@@ -1,35 +1,35 @@
 
 // //example-1
 // function rrrmoviedetails() {
-//     return new Promise((resolve) => {
+// //     return new Promise((resolve) => {
 
-//         setTimeout(() => {
-//             resolve("RRR")
-//         }, 5000)
-//     })
-// }
+// //         setTimeout(() => {
+// //             resolve("RRR")
+// //         }, 5000)
+// //     })
+// // }
 
-// let bombaymoviedetails = new Promise((resolve) => {
+// // let bombaymoviedetails = new Promise((resolve) => {
 
-//     setTimeout(() => {
-//         resolve("BOMBAY")
-//     }, 2000)
-// })
+// //     setTimeout(() => {
+// //         resolve("BOMBAY")
+// //     }, 2000)
+// // })
 
-// async function totalmovies() {
-//     await rrrmoviedetails().then((result) => {
-//         console.log(result)
-//     })
-//     let bobaymovie = await bombaymoviedetails;
-//     console.log(bobaymovie)
-//     // await bombaymoviedetails.then((data)=>{
-//     //   console.log(data)
-//     // })
-//     console.log("The two movies are directed by SSR and Mani Ratanam")
-// }
-// totalmovies()
+// // async function totalmovies() {
+// //     await rrrmoviedetails().then((result) => {
+// //         console.log(result)
+// //     })
+// //     let bobaymovie = await bombaymoviedetails;
+// //     console.log(bobaymovie)
+// //     // await bombaymoviedetails.then((data)=>{
+// //     //   console.log(data)
+// //     // })
+// //     console.log("The two movies are directed by SSR and Mani Ratanam")
+// // }
+// // totalmovies()
 
-//example-2
+// //example-2
 let tamilmoviedetails = new Promise((resolve, reject) => {
     setTimeout(() => {
         let tamil = true
@@ -78,3 +78,5 @@ async function moviedeails() {
 }
 
 moviedeails()
+
+

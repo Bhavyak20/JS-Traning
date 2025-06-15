@@ -56,6 +56,30 @@ class daughter extends mother{
 // let details=new mother("Soft", "Fair")
 // details.motherdetails()
 
-let kid2=new daughter("soft","fair");
+let kid2=new daughter("kind","fair");
 kid2.motherdetails()//by using super keyword we accessed motherdetails in daughter class
 kid2.daughterdetails()
+
+class car1{
+    constructor(name,type,colour){
+        this.carname=name;
+        this.cartype=type;
+        this.carcolour=colour;
+    }
+
+    cardetails(){
+        console.log(`I bought new, car name is ${this.carname} and it ${this.cartype} which was in ${this.carcolour} colour`)
+    }
+}
+
+class car2 extends car1{
+    nextcardetails(){
+            console.log(`I bought second car in next year which was ${this.cartype} and same ${this.carcolour}`)
+    }
+
+    
+}
+let firstcar=new car1("TATA","High end","Gray")
+firstcar.cardetails();
+let secondcar = new car2("TATA","High end","Gray")
+secondcar.nextcardetails()

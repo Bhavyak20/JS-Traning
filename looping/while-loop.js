@@ -79,3 +79,21 @@ while(gam<3){
 // gam++
 
 // }while(gam<games.length)
+
+
+let cars=0;
+let cardetails=[
+    {company:"Ford",colour:"Red"},
+    {company:"Benz",colour:"Black"},
+    {company:"TATA",colour:"Blue"},
+    {company:"Rolls Royce",colour:"Gray"}
+]
+// while(cars < 4){
+//     console.log(`Brands of the car is ${cardetails[cars].company} and their colours are ${cardetails[cars].colour}`)
+//     cars=cars+1
+//}
+do{
+ 
+console.log(`Famous brand of cars are ${cardetails[cars].company} and their signature colours is ${cardetails[cars].colour}`)
+   cars = cars +1;
+}while(cars < 4)
