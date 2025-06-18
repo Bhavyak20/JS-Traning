@@ -26,3 +26,18 @@ console.log(`Animals which lives in forest is called as ${this.type1animals}.`)
 }
 let zoodetails=new zoo("Wild Animals","Domestic Animals","Aqua Animals")
 zoodetails.wildanimals();
+
+
+//eample-3
+let school=function(name,location,principal){
+this.schoolname=name;
+this.schoollocation=location;this.schoolprincipal=principal;
+console.log(`I'm studying in ${this.schoolname} and location is ${this.schoollocation}`)
+}
+
+school.prototype.school2=function(){
+console.log(`My friend is studying in ${this.schoolname} and their princiapl name is ${this.schoolprincipal}`)
+}
+
+let schooldetails= new school("NRI","VIJ","Venkat")
+schooldetails.school2();
